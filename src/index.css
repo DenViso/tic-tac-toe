@@ -90,13 +90,16 @@ h3 {
 }
 .winner{
   width: 300px;
-  height: 80px;
-  background: red;
-
-  color: #848484;
+  height: 102px;
+  background: rgba(141, 97, 97, 0.9);
+  color: #f8f4f4;
   font-size: 50px;
   text-align: center;
-  border-radius: 15px;
+  /* border-radius: 15px; */
+  position: relative;
+  top: -24px;
+  left: 416px;
+  z-index: 1;
 }
 
 .new-game{

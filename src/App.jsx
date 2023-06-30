@@ -35,26 +35,29 @@ function App() {
 					squaresCopy[line[0]] === "X"
 						? setWinner("Winner is X")
 						: setWinner("Winner is 0");
-				}
-
-			
+				} 
+				// else if (
+				// 	squaresCopy[line[0]] !== squaresCopy[line[1]] ||
+				// 	squaresCopy[line[1]] !== squaresCopy[line[2]]
+				// ) {
+				// 	setWinner("No winner");
+				// }
 			}
 		});
 	};
 
+	
 	const resetGame = () => {
 		setSquares(Array(9).fill(null));
 		setIsXNext(true);
 		setWinner(null);
 	};
 
-	
-
+	console.log(winner);
 	return (
 		<>
 			{winner && (
 				<div className="winner-box">
-					
 					<p className="winner">{winner}</p>
 				</div>
 			)}
